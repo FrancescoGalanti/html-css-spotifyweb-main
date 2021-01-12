@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
+    <!-- font -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+   <!-- main css -->
+   <link rel="stylesheet" href="style.css">
+    <title></title>
+  </head>
+  <body>
+
+    <!-- Container vh 100 -->
+      <div class="app">
+        <!-- Mian- window -->
+        <main class="main-window">
+          <!-- sidebar -->
+          <aside class="sidebar flex-basis-600px">
+            <!-- sidebar-top -->
+            <div class="sidebar-top">
+              <!-- logo ony desktop only tablet-->
+              <img class="logo padding-left-10"  src="./img/logo.svg" alt="logo">
+              <!-- logo only 600px -->
+              <img class="logo-small img" src="./img/logo-small.svg" alt="">
+              <ul class="padding-bottom-20">
+               <li class="flex border-left border-none padding-bottom-10">
+                 <img class="home img padding-top" src="./img/home.svg" alt="">
+                 <p class="list-description padding-left display-none">Home</p>
+               </li>
+               <li class="flex padding-left-13 padding-bottom-10 padding-left-0">
+                 <img class="home img" src="./img/search.svg" alt="">
+                 <p class="list-description padding-left display-none">Cerca</p>
+               </li>
+               <li class="flex padding-left-13 padding-left-0">
+                 <img class="home img" src="./img/libreria.svg" alt="">
+                 <p class="list-description padding-left display-none">La tua libreria</p>
+               </li>
+              </ul>
+              <h3 class="padding-left-13 padding-bottom-10 display-none">PLAYLIST</h3>
+              <ul>
+                <li class="flex padding-left-13 padding-bottom-10">
+                  <img class="home img home-30 padding-top display-none" src="data:image/jpeg;base64,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" alt="">
+                  <p class="list-description padding-left-10 display-none">Crea playlist</p>
+                </li>
+              </ul>
+              <p class="list-description padding-left-10 display-none padding-bottom-20 marker">Crea playlist</p>
+              <p class="list-description padding-left-10 display-none  padding-bottom-20 marker">Crea playlist</p>
+              <p class="list-description padding-left-10 display-none  padding-bottom-20 marker">Crea playlist</p>
+              <p class="list-description padding-left-10 display-none  padding-bottom-20 marker">Crea playlist</p>
+            </div>
+            <div class="sidebar-bottom">
+             <ul class="padding-left-10 padding-left-0">
+                <li class="flex border-bottom border-none padding-bottom-0">
+                  <i class="far fa-arrow-alt-circle-down padding-left padding-left-0 size-icon padding-bottom" center></i>
+                  <p class="list-description padding-left-10 display-none">installa app</p>
+                </li>
+                <li class="flex padding-top-10 padding-top-0">
+                  <img class="home img border-radios" src="./img/profile.svg" alt="">
+                  <p class="list-description list-white padding-left-10 display-none  ">John Dee</p>
+                </li>
+             </ul>
+           </div>
+          </aside>
+          <!-- content -->
+          <div class="content">
+            <!-- Barra main-top fixed -->
+            <div class="content-top-bar flex">
+                <div class="btn">
+                 <a href="#">EFFETUA L'UPGRADE</a>
+               </div>
+            </div>
+            <!-- Main parte principale -->
+            <div class="scrollable">
+              <nav class="content-menu">
+               <ul class=" list-menu text-center">
+                 <li class="option hoover" id="line">IN EVIDENZIA</li>
+                 <li class="option hoover" id="line">PODCAST</li>
+                 <li class="option hoover" id="line">CLASSIFICHE</li>
+                 <li class="option hoover" id="line">GENERI E MOOD</li>
+                 <li class="option padding-top hoover" id="line">NUOVE USCITE</li>
+                 <li class="option padding-top hoover" id="line">SCOPRI</li>
+               </ul>
+              </nav>
+              <!-- Lista di album -->
+              <section class="content-category">
+                <h2 id="change">Movies</h2>
+                <ul class="album-list">
+                 <li class="album">
+                   <div class="portfolio-item">
+                     <div class="portfolio-layover">
+                       <i class="far fa-play-circle"></i>
+                     </div>
+                     <img class="super"src="./img/aquietplace.jpeg" alt="">
+                   </div>
+                   <h3 class="text-center">A Quiet Place</h2>
+                 </li>
+                 <li class="album">
+                   <div class="portfolio-item">
+                     <div class="portfolio-layover">
+                       <i class="far fa-play-circle"></i>
+                     </div>
+                     <img class="super" src="./img/sinister.jpeg" alt="">
+                   </div>
+                   <h2 class="text-center">Sinister</h2>
+                 </li>
+                 <li class="album">
+                   <div class="portfolio-item">
+                     <div class="portfolio-layover">
+                       <i class="far fa-play-circle"></i>
+                     </div>
+                     <img class="super" src="./img/cure.jpeg" alt="">
+                   </div>
+                   <h2 class="text-center">Cure for wellness</h2>
+
+                 </li>
+                 <li class="album">
+                   <div class="portfolio-item">
+                     <div class="portfolio-layover">
+                       <i class="far fa-play-circle"></i>
+                     </div>
+                     <img class="super" src="./img/split.jpeg" alt="">
+                   </div>
+                   <h2 class="text-center">split</h2>
+
+                 </li>
+                 <li class="album">
+                   <div class="portfolio-item">
+                     <div class="portfolio-layover">
+                       <i class="far fa-play-circle"></i>
+                     </div>
+                     <img class="super" src="./img/stranger.jpeg" alt="">
+                   </div>
+                   <h2 class="text-center">stranger</h2>
+                 </li>
+                 <li class="album">
+                   <div class="portfolio-item">
+                     <div class="portfolio-layover">
+                       <i class="far fa-play-circle"></i>
+                     </div>
+                     <img class="super" src="./img/sinister.jpeg" alt="">
+                   </div>
+                   <h2 class="text-center">Sinister</h2>
+               </ul>
+              </section>
+
+              <section class="content-category">
+                <h2>Album</h2>
+                <ul class="album-list">
+                  <li class="album">
+                    <div class="portfolio-item">
+                      <div class="portfolio-layover">
+                        <i class="far fa-play-circle"></i>
+                      </div>
+                      <img class="super"  src="./img/young.jpeg" alt="">
+                    </div>
+                    <h2 class="text-center">young</h2>
+                  </li>
+                  <li class="album">
+                    <div class="portfolio-item">
+                      <div class="portfolio-layover">
+                        <i class="far fa-play-circle"></i>
+                      </div>
+                      <img class="super"  src="./img/metal_lifting.jpg" alt="">
+                    </div>
+                    <h2 class="text-center">metal_lifting</h2>
+                </ul>
+              </section>
+
+
+              <section class="content-category">
+                <h2>Album</h2>
+                <ul class="album-list">
+                  <li class="album">
+                    <div class="portfolio-item">
+                      <div class="portfolio-layover-radius border-radius ">
+                        <i class="far fa-play-circle"></i>
+                      </div>
+                      <img class="super border-radius" src="./img/mixdaily.jpeg" alt="">
+                    </div>
+                    <h2 class="text-center">mixdaily</h2>
+                  </li>
+                  <li class="album">
+                    <div class="portfolio-item">
+                      <div class="portfolio-layover-radius border-radius">
+                        <i class="far fa-play-circle"></i>
+                      </div>
+                      <img  class="super border-radius" src="./img/radar.jpeg" alt="">
+                    </div>
+                    <h2 class="text-center">radar</h2>
+                  </li>
+                </ul>
+              </section>
+
+
+              <section class="content-category">
+                <h2>Album</h2>
+                <ul class="album-list">
+                  <li class="album">
+                    <div class="portfolio-item">
+                      <div class="portfolio-layover">
+                        <i class="far fa-play-circle"></i>
+                      </div>
+                      <img class="super" src="./img/radar.jpeg" alt="">
+                    </div>
+                    <h2 class="text-center">radar</h2>
+                  </li>
+                  <li class="album">
+                    <div class="portfolio-item">
+                      <div class="portfolio-layover">
+                        <i class="far fa-play-circle"></i>
+                      </div>
+                      <img class="super" src="./img/radar.jpeg" alt="">
+                    </div>
+                    <h2 class="text-center">radar</h2>
+                  </li>
+                </ul>
+              </section>
+
+
+            </div>
+         </div>
+       </main>
+        <!-- footer -->
+       <footer class="player">
+          <!-- player -->
+          <div class="player-album">
+            <ul>
+              <li class="flex">
+                <img class="img-sinister" src="./img/sinister.jpeg" alt="">
+                <ul class="flex ul-list">
+                  <li>
+                     <p>Sinister</p>
+                  </li>
+                  <li>
+                     <p>Best Horror</p>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="ul-row">
+              <li><i class="far fa-heart"></i></li>
+              <li><i class="far fa-folder"></i></li>
+            </ul>
+          </div>
+
+         <div class="player-controller">
+           <ul class="flex ul-column">
+             <li>
+               <i class="fas fa-random "></i>
+             </li>
+             <li>
+               <i class="fas fa-step-backward padding-left-13"></i>
+             </li>
+             <li>
+               <i class="far fa-play-circle play padding-left-13"></i>
+             </li>
+             <li>
+                <i class="fas fa-step-forward padding-left-13"></i>
+             </li>
+             <li>
+                <i class="fas fa-redo-alt padding-left-13"></i>
+             </li>
+           </ul>
+           <div class="progressbar-and-number">
+
+               <span class="song-progress">0:25</span>
+               <div class="progress-bar">
+                 <div class="partial-bar"></div>
+               </div>
+               <span class="song-duration">4:35</span>
+
+           </div>
+         </div>
+
+
+
+         <div class="player-audio">
+           <i class="icon fas fa-microphone"></i>
+         </div>
+       </footer>
+     </div>
+      <!-- javascript -->
+      <script src="./javascript/javascript.js">
+
+      </script>
+   </body>
+
+</html>
